@@ -43,8 +43,7 @@ this analysis are scoped accordingly.
 
 - Anything requiring work-order data (actual repair timing, cost, crew data) —
   not in the published dataset.
-- Demographic overlays. Doable with census joins, but out of scope for v1; the
-  decision memo notes it as a validation step.
+- Demographic overlays. Doable with census joins, but out of scope for v1.
 - Predictive modeling. This is an operational analysis, not a forecasting
   exercise.
 

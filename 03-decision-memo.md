@@ -24,8 +24,8 @@ formalized as an automated validation in this repo.
 ### 1. "Resolution time" is two different kinds of work wearing one label
 
 Consumable requests close almost immediately — illegal dumping and graffiti have
-a median resolution of 0 days (70% and 57% close same-day), missed collection one
-day. Infrastructure requests run to months or years — street light maintenance
+a median resolution of 0 days, missed collection one day. Infrastructure requests
+run to months or years — street light maintenance
 has a median of 166 days. These are not slow versions of the same process; they
 are capital and maintenance work sharing an intake and a status vocabulary with
 same-day cleanup. A single program-wide target is therefore meaningless.
