@@ -80,7 +80,8 @@ def verify_frame(name: str, df: pd.DataFrame) -> None:
     unparseable = req.isna().sum()
     check(unparseable / max(len(df), 1) < 0.01,
           f"{name}: {unparseable:,} unparseable date_requested values (>1%)", hard=True)
-    check((req >= "2016-05-01").all() or bool(req.isna().any()),
+    valid_req = req.dropna()
+    check(valid_req.empty or (valid_req >= "2016-05-01").all(),
           f"{name}: date_requested values before program launch (May 2016)")
     future = (req > pd.Timestamp.now()).sum()
     check(future == 0, f"{name}: {future:,} reports dated in the future")
