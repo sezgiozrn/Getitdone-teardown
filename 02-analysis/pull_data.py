@@ -20,8 +20,9 @@ from pathlib import Path
 BASE = "https://seshat.datasd.org/get_it_done_reports"
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
-# Keep the analysis window small and recent: full-year 2024 + 2025, plus the
-# current open file. Add years if a longer baseline is needed.
+# Keep the analysis window small and recent: full-year 2025 closed reports,
+# plus the current open file. Add prior years here if a longer baseline is
+# needed — analysis.py already globs closed_*.csv, so extra years just work.
 FILES = {
     "closed_2025.csv": f"{BASE}/get_it_done_requests_closed_2025_datasd.csv",
     "open.csv": f"{BASE}/get_it_done_requests_open_datasd.csv",
