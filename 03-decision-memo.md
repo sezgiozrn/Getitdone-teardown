@@ -15,8 +15,9 @@ work being run through a queue built for something else.
 
 Two scope notes. The dataset records when a resident was *notified* a case was
 addressed, not when work was performed, so findings describe resident-experienced
-responsiveness. The resolution-time metric here was validated against the city's
-own `case_age_days` field and matches it exactly across all 378,669 records.
+responsiveness. The resolution-time metric here was spot-checked against a sample
+of the city's own `case_age_days` field and was consistent; that check is not yet
+formalized as an automated validation in this repo.
 
 ## Findings
 
@@ -98,6 +99,7 @@ rather than just a relabel.
 ---
 *Methodology, queries, and data-quality checks: see `02-analysis/` and
 `scripts/verify_data.py`. All figures reproduce against the 2025 data snapshot;
-the resolution-time metric matches the city's published `case_age_days` field
-exactly.*
+the resolution-time metric was spot-checked against the city's published
+`case_age_days` field, though that check is not yet an automated part of this
+repo's validation.*
 
