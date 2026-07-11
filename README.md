@@ -15,6 +15,8 @@ targets (starting sidewalk repair, Districts 2 and 7), with tradeoffs.
 [Requirements](04-requirements.md) specs the recommended change,
 with user stories and acceptance criteria.
 
+![Sidewalk repair median resolution by council district vs. the 37-day citywide median](02-analysis/output/chart_sidewalk_district_medians.png)
+
 ## Findings
 
 | # | Finding | So what |
@@ -56,6 +58,7 @@ pip install -r requirements.txt
 python 02-analysis/pull_data.py      # downloads 2 files (closed 2025, open) from data.sandiego.gov
 python scripts/verify_data.py        # hard-fails on schema drift / ID dupes / date garbage
 python 02-analysis/analysis.py       # writes findings tables to 02-analysis/output/
+python 02-analysis/make_chart.py     # renders the README chart from the q1 findings output
 ```
 
 ## Methodology notes
