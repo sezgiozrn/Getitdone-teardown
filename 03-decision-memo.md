@@ -98,8 +98,5 @@ rather than just a relabel.
 
 ---
 *Methodology, queries, and data-quality checks: see `02-analysis/` and
-`scripts/verify_data.py`. All figures reproduce against the 2025 data snapshot;
-the resolution-time metric was spot-checked against the city's published
-`case_age_days` field, though that check is not yet an automated part of this
-repo's validation.*
+`scripts/verify_data.py`. All figures reproduce against the 2025 data snapshot.*
 
